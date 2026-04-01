@@ -107,7 +107,7 @@
             </select>
         </div>
         <button class="btn btn-primary" onclick="saveReal()">საათის დაფიქსირება</button>
-        <button class="btn btn-archive" onclick="openArchive()">📂 დღიურის არქივი</button>
+        <button class="btn btn-archive" onclick="openArchive()"> 📓  დღიურის არქივი</button>
         
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
             <button class="btn btn-secondary" style="font-size: 0.8rem;" onclick="fillFuture()">წლის შევსება</button>
@@ -136,7 +136,7 @@
 
 <div id="archivePage">
     <div class="archive-header">
-        <button class="btn btn-secondary" style="width: auto; margin-bottom:0;" onclick="closeArchive()">⬅ უკან</button>
+        <button class="btn btn-secondary" style="width: auto; margin-bottom:0;" onclick="closeArchive()"> უკან</button>
         <h3 id="archiveTitle">დღიურის არქივი</h3>
         <button class="btn btn-primary" style="width: auto; margin-bottom:0;" onclick="downloadPDF()">📄 PDF</button>
     </div>
@@ -190,7 +190,7 @@
                     <option value="16" ${pVal=='16'?'selected':''}>16</option><option value="24" ${pVal=='24'?'selected':''}>24</option>
                 </select></td>
                 <td><div class="real-val">${rVal}</div></td>
-                <td><span class="journal-icon-btn ${s.note?'has-note':''}" onclick="openM('${k}',${d})">📝</span></td>
+                <td><span class="journal-icon-btn ${s.note?'has-note':''}" onclick="openM('${k}',${d})"></span></td>
             </tr>`;
         }
         document.getElementById('bTable').innerHTML = bHTML;
